@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+		margin: 0;
+		padding: 0;
+		color: #2a2a2a;
+		background: #5a5a5a;
+		font-family: verdana, helvetica, arial, sans-serif; /* replace with your choice of font-family list from Dreamweaver */
+		font-size: 20px;
+		line-height: 150%;  /* adjust as needed */	
+		}
+		
+.wrapper {
+   		background: #ffffff;
+   		width: 972px;
+		margin: 0 auto;
+		padding: 20px 40px;
+		}
+		
+h1 {
+	background: gold;
+	color: aliceblue;
+			
+	font-size: 48px;
+	font-style: oblique;
+	line-height: 150%;			
+	letter-spacing: 4px;
+	
+	border: solid 8px red;
+	padding: 24px;
+	margin: 24px 0;
+	display: block;			
+	}
+		
+		
+h2 {
+	color: deeppink;
+	margin-top: 48px;
+	}
+		
+#sec-overview {color: rebeccapurple;}
+
+
+/* site header CSS */
+
+.site-logo-image {
+	height: 40px;
+}
+
+/* sitenav-grid css */
+
+.sitenav-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);  /* creates six columns of equal width, although the first will stretch to accommodate the logo */
+    background: pink;
+	text-align: center;	
+	}
+	
+.sitenav-grid a { 
+	display: inline-block;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	background: pink;
+	padding: 11px 8px 5px 8px; /* zero-sum adjust top (11px)and bottom (5px) padding so that their total remains the same in order to align the links with the logo; only necessary if you include an image/logo inside the navigation menu  */
+	height: 40px; /* matches height of site-logo image */
+	border-right: solid white 4px;
+}
+
+.sitenav-grid a:hover {
+	color: pink;
+	background: white;	
+}
+
+.sitenav-grid a:first-child {  /* CSS for the grid cell containing the site logo = "first child" of the grid container element */
+	padding: 8px 12px 8px 8px; /* adds a little extra padding on the right of the logo */
+	background: white;
+}
+
+.sitenav-grid a:first-child:hover {
+	background: pink;
+}
+
+	
+/* gallery grid CSS */
+        
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 20px ;
+        justify-items: center;
+        align-items: start;
+        justify-content:space-around;
+		}
+                        
+    .gallery-item {
+        width: 300px; /*should match the width of your images + width of border (if any) */
+        text-align: center;
+        } 
+        
+    /* css for styling the p/caption under the image */       
+    .gallery-item p {
+        margin: .25em 0;
+        line-height: 135%;
+		font-size: 90%;
+		}
+		
+/* item data CSS */ 	
+
+	
